@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Search | Soul of Sabah</title>
+
+    <!-- Connect HTML to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         SEARCH PAGE
+    ========================== -->
+
+    <div class="search-container">
+
+        <!-- Main title -->
+        <h1>SEARCH SABAH</h1>
+
+        <!-- Description -->
+        <p class="description">
+            Discover the stories, legends and cultures of Sabah.
+        </p>
+
+
+        <!-- =========================
+             SEARCH BAR
+        ========================== -->
+
+        <div class="search-box">
+
+            <!-- User types their search here -->
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Balan-Balan, Bobolian, Murut..."
+                onkeypress="handleEnter(event)"
+            >
+
+            <!-- Search button -->
+            <button
+                type="button"
+                onclick="searchContent()"
+                aria-label="Search"
+            >
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             SEARCH RESULTS
+        ========================== -->
+
+        <div id="results">
+
+            <!-- Search results will appear here -->
+
+        </div>
+
+    </div>
+
+
+    <!-- Connect HTML to JavaScript -->
+    <script src="search.js"></script>
+
+</body>
+
+</html>

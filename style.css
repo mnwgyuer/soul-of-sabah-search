@@ -1,0 +1,348 @@
+/* =========================================
+   GENERAL PAGE SETTINGS
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    /* Main font */
+    font-family: Georgia, "Times New Roman", serif;
+
+    /* Background */
+    background-color: #f4f0e6;
+
+    /* Main text colour */
+    color: #18251f;
+
+    /* Minimum screen height */
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   SEARCH CONTAINER
+========================================= */
+
+.search-container {
+
+    /* Width of content */
+    width: 80%;
+
+    /* Maximum width */
+    max-width: 900px;
+
+    /* Center horizontally */
+    margin: 100px auto;
+
+    /* Center text */
+    text-align: center;
+
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+
+h1 {
+
+    /* Title size */
+    font-size: 50px;
+
+    /* Letter spacing */
+    letter-spacing: 4px;
+
+    /* Space underneath */
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description {
+
+    /* Font */
+    font-family: Arial, sans-serif;
+
+    /* Font size */
+    font-size: 16px;
+
+    /* Space below */
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.search-box {
+
+    /* Put input and button beside each other */
+    display: flex;
+
+    /* Width */
+    width: 100%;
+
+    /* Maximum width */
+    max-width: 700px;
+
+    /* Center */
+    margin: 0 auto;
+
+    /* Border */
+    border: 2px solid #18251f;
+
+    /* White background */
+    background-color: white;
+
+}
+
+
+/* =========================================
+   SEARCH INPUT
+========================================= */
+
+.search-box input {
+
+    /* Take up remaining space */
+    flex: 1;
+
+    /* Space inside */
+    padding: 18px;
+
+    /* Remove default border */
+    border: none;
+
+    /* Remove outline */
+    outline: none;
+
+    /* Text size */
+    font-size: 17px;
+
+    /* Font */
+    font-family: Arial, sans-serif;
+
+}
+
+
+/* Placeholder text */
+
+.search-box input::placeholder {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   SEARCH BUTTON
+========================================= */
+
+.search-box button {
+
+    /* Button width */
+    width: 65px;
+
+    /* Button height */
+    min-height: 55px;
+
+    /* Remove border */
+    border: none;
+
+    /* Dark background */
+    background-color: #18251f;
+
+    /* White icon */
+    color: white;
+
+    /* Icon size */
+    font-size: 20px;
+
+    /* Mouse cursor */
+    cursor: pointer;
+
+}
+
+
+/* Button hover */
+
+.search-box button:hover {
+
+    background-color: #304238;
+
+}
+
+
+/* =========================================
+   RESULTS AREA
+========================================= */
+
+#results {
+
+    /* Space above results */
+    margin-top: 35px;
+
+}
+
+
+/* =========================================
+   INDIVIDUAL RESULT
+========================================= */
+
+.result {
+
+    /* Make entire result clickable */
+    display: block;
+
+    /* Remove underline */
+    text-decoration: none;
+
+    /* Text colour */
+    color: #18251f;
+
+    /* Background */
+    background-color: white;
+
+    /* Space inside */
+    padding: 20px;
+
+    /* Space between results */
+    margin: 12px 0;
+
+    /* Left border */
+    border-left: 5px solid #18251f;
+
+    /* Align text left */
+    text-align: left;
+
+    /* Smooth hover animation */
+    transition: 0.2s;
+
+}
+
+
+/* Result hover */
+
+.result:hover {
+
+    background-color: #e8e1d2;
+
+    transform: translateX(5px);
+
+}
+
+
+/* =========================================
+   RESULT TITLE
+========================================= */
+
+.result h2 {
+
+    /* Space underneath title */
+    margin-bottom: 5px;
+
+    /* Font size */
+    font-size: 24px;
+
+}
+
+
+/* =========================================
+   RESULT DESCRIPTION
+========================================= */
+
+.result p {
+
+    /* Font */
+    font-family: Arial, sans-serif;
+
+    /* Font size */
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   NO RESULTS MESSAGE
+========================================= */
+
+.no-results {
+
+    /* Space */
+    padding: 20px;
+
+    /* Font */
+    font-family: Arial, sans-serif;
+
+    /* Text colour */
+    color: #555;
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .search-container {
+
+        width: 90%;
+
+        margin: 70px auto;
+
+    }
+
+
+    h1 {
+
+        font-size: 35px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .description {
+
+        font-size: 14px;
+
+    }
+
+
+    .search-box input {
+
+        padding: 14px;
+
+        font-size: 15px;
+
+    }
+
+
+    .search-box button {
+
+        width: 55px;
+
+    }
+
+
+    .result h2 {
+
+        font-size: 20px;
+
+    }
+
+}
